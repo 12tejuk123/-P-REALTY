@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import sqlite3
 import os
-import pandas as pd
+
 
 app = Flask(__name__)
 
@@ -127,7 +127,7 @@ def admin():
 BASE_DIR = os.path.dirname(__file__)
 file_path = os.path.join(BASE_DIR, "data.xlsx")
 
-pd.read_excel(file_path)
+
 # =====================================
 # RUN APP
 # =====================================
